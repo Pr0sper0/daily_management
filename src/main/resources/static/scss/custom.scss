@@ -1,0 +1,77 @@
+@import "config";
+@import "utility";
+
+.App {
+  background-color: #deded0;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  float: center;
+  overflow: hidden;
+}
+
+.bg-main {
+  background: $medium-color;
+}
+
+.btn-primary,
+.btn-light,
+.btn-dark,
+.btn-gray,
+.btn-danger,
+.btn-green {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 2%;
+}
+
+.btn-primary {
+  color: #333;
+  background-color: $primary-color;
+}
+
+.btn-green {
+  color: #333;
+  background-color: #33aa00;
+}
+
+.btn-gray {
+  color: #333;
+  background-color: #bbbbbb;
+}
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+.btn-primary:hover {
+  color: #333;
+  background-color: #ffac00;
+}
+
+.btn-gray:hover {
+  color: #333;
+  background-color: #cfcfcf;
+}
+
+.btn-green:hover {
+  color: #333;
+  background-color: #339900;
+}
+
+.nav-item .nav-link {
+  color: #111122;
+}
