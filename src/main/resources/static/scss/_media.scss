@@ -1,0 +1,35 @@
+@media (max-width: 840px) {
+  #landing .landing-container {
+    .row {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #typewriter {
+    font-size: 1rem !important;
+    line-height: normal;
+  }
+
+  .navbar .navbar-brand {
+    display: none;
+  }
+
+  #mobile-nav {
+    width: 100%;
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+
+      li {
+        margin: 0 0.7rem;
+      }
+    }
+  }
+}

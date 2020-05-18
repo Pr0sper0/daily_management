@@ -1,77 +1,87 @@
 @import "config";
 @import "utility";
+@import "media";
 
-.App {
-  background-color: #deded0;
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app > div {
+  padding: 3rem;
+}
+
+.main-container {
+  overflow: auto;
 }
 
 .container {
-  max-width: 1280px;
-  padding: 0 1.5rem;
+  height: 100%;
+  padding: 0;
   margin: auto;
   float: center;
-  overflow: hidden;
+
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.navbar {
+  max-height: 4rem;
 }
 
 .bg-main {
   background: $medium-color;
 }
 
-.btn-primary,
-.btn-light,
-.btn-dark,
-.btn-gray,
-.btn-danger,
-.btn-green {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  transition: all 0.5s;
-  border: none;
-  cursor: pointer;
-  border-radius: 2%;
+.bg-header {
+  background: $header-color;
 }
 
-.btn-primary {
-  color: #333;
-  background-color: $primary-color;
+.menubar {
+  position: relative;
+
+  z-index: 999;
 }
 
-.btn-green {
-  color: #333;
-  background-color: #33aa00;
+#landing {
+  margin: 0;
+  padding: 1.5rem;
+  background: $landing-color;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.btn-gray {
-  color: #333;
-  background-color: #bbbbbb;
+#landing:before {
+  content: "";
+  background: url("./utils/img/layout_i1.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
-.btn-light {
-  color: #333;
-  background-color: #f4f4f4;
-}
+#landing .landing-container {
+  display: flex;
 
-.btn-dark {
-  color: #f4f4f4;
-  background-color: #333;
-}
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90%;
 
-.btn-primary:hover {
-  color: #333;
-  background-color: #ffac00;
-}
-
-.btn-gray:hover {
-  color: #333;
-  background-color: #cfcfcf;
-}
-
-.btn-green:hover {
-  color: #333;
-  background-color: #339900;
-}
-
-.nav-item .nav-link {
-  color: #111122;
+  #typewriter {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 8rem;
+  }
 }
