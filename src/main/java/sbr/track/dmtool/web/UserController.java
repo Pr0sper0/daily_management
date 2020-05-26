@@ -45,6 +45,7 @@ public class UserController {
 
     @PostMapping("/login")
     public ResponseEntity<?> authenticate(@Valid @RequestBody LoginRequest loginRequest, BindingResult result) {
+
         ResponseEntity<?> errorMap = mapValidationErrorService.MapValidationService(result);
         if (errorMap != null) return errorMap;
         //System.out.println("pass: " + loginRequest.getPassword());
